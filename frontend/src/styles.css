@@ -2,8 +2,18 @@
 *{
     direction: rtl;
 }
+body , html {
+  padding: 0%;
+  margin: 0%;
+}
 a{
     text-decoration: none !important;
+}
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-bottom: 0;
+  padding-right: 0;
 }
 :root {
   --primarycolor: #101860 !important;

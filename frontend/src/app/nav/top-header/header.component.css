@@ -1,0 +1,115 @@
+
+
+.left-top-header,
+.right-top-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 35px;
+}
+
+.left-top-header {
+  gap: 20px;
+  background-color: var(--secondarycolor);
+  justify-content: flex-end;
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 26px) 100%, 0 100%);
+  width: 47%;
+}
+.right-top-header {
+  gap: 16px;
+  flex: 1;
+}
+.left-top-header .header-info-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ span.v-line {
+  width: 1px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.17);
+  display: inline-flex;
+}
+.right-top-header span.shape2 {
+  inset-inline-end: 15px;
+  
+}
+.right-top-header span.shape1 {
+  inset-inline-end: 40px;
+}
+.right-top-header span.shape {
+  width: 41px;
+  height: 35px;
+  background: #e6efee;
+  clip-path: polygon(28px 0%, 100% 0%, 14px 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  z-index:-1;
+  
+}
+
+
+.left-top-header .header-info-box .text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+span.icon {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.47);
+}
+ .left-bac {
+  width: 40%;
+  height: 35px;
+  position: absolute;
+  background:var(--secondarycolor);
+  inset-inline-end: 0;
+  top: 0;
+  z-index: -1;
+}
+.nav-item a{
+    color: var(--text-color200);
+}
+ .side-menu-description {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: justify;
+  color: var(--text-color300);
+  margin-top: 32px;
+}
+
+@media  (max-width: 767px){
+  .left-top-header .header-info-box {
+    gap: 6px;
+  }
+ .left-top-header .header-info-box .text {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 100;
+}
+.left-top-header .header-info-box .icon{
+  font-size: smaller;
+}
+   .right-top-header span.shape2 {
+    inset-inline-end: 12px;
+  }
+    .right-top-header span.shape1 {
+    inset-inline-end: -14px;
+  }
+.left-top-header{
+width: 88%; }
+.right-top-header{
+  width: 12%;
+}
+.navside{
+  position: relative;
+  left: 100%;
+}
+
+
+
+}
+

@@ -1,0 +1,93 @@
+
+.offcanvas{
+    border-left: 6px solid var(--secondarycolor);
+    width: 378px;
+}
+ .offcanvas-header span.close {
+    transform: rotate(45deg);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    background: var(--secondarycolor);
+    color: #fff;
+    border: none;
+  }
+
+.side-menu-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.side-menu-contact h5 {
+  color: var(--title-color);
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 800;
+}
+.contact-items {
+  display: inline-flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 12px;
+}
+.contact-items .item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contact-items .item .item-text {
+  color: var(--text-color300);
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.sakhtino-btn {
+  padding: 0 28px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 500;
+  border-radius: 27px;
+  width: max-content;
+  border: none;
+  transition: 0.3s;
+  white-space: nowrap;
+
+}
+.secondary{
+    background-color: var(--secondarybtnbg) !important;
+  color: var(--primarycolor100) !important;
+}
+ .side-menu-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+.side-menu-socials a {
+  width: 56px;
+  display: flex;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(201, 212, 227, 0.26);
+  border-radius: 50%;
+  color: var(--secondarycolor);
+  font-size: 24px;
+  padding: 7px;
+}
+
+span.toggle-side-menu {
+  color: var(--text-color200);
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  right: 0%;
+  z-index: 4;
+}

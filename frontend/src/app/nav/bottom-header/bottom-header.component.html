@@ -1,0 +1,20 @@
+<div class="main-header">
+  <div class="container">
+    <div class="inner-main-header">
+<div class="right-main-header">
+	<div class="logo-box">
+                                    <a href="">
+                                        <img  [src]="LOGOURL" alt="قالب شرکتی ساختینو">
+                                    </a>
+                                </div>
+
+<ul  class="menu d-flex">
+	@for (item of menuItems; track $index) { 
+<li class="item" [ngClass]="{'active' : item.isActive}" (click)="toggleIsActive(item)"><a [routerLink]="item.url">{{item.title}}</a></li>
+	}
+</ul>
+</div>
+    
+    </div>
+  </div>
+</div>

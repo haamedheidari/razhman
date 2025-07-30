@@ -1,0 +1,60 @@
+<div data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="toggle-side-menu">
+   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+
+<div class="offcanvas offcanvas-end p-3" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header row">
+    <h5 class="offcanvas-title col-10 " id="offcanvasRightLabel"><img width="116" [src]="LOGOURL" alt="قالب شرکتی ساختینو"></h5>
+    <span class="close col-2 justify-content-center align-items-center d-flex" data-bs-dismiss="offcanvas" aria-label="Close">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+</svg>    </span>
+  </div>
+  <div class="offcanvas-body">
+   <ng-content></ng-content>
+     <div class="side-menu-contact my-5 align-items-center align-items-lg-start ">
+                    <h5>راه های ارتباطی با ما</h5>
+                    <div class="contact-items">
+                      <div class="item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span class="v-line bg-secondary"></span>
+                        <a [href]="PHONENUMBER" class="item-text">
+                          021 - 33526278
+                        </a>
+                      </div>
+                      <div class="item">
+                        <i class="bi bi-clock"></i>
+                        <span class="v-line bg-secondary"></span>
+                        <div class="item-text">
+                          شنبه تا پنج شنبه / 8:00-16:00
+                        </div>
+                      </div>
+                      <div class="item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span class="v-line bg-secondary"></span>
+                        <a [href]="EMAIL" class="item-text">
+                          {{EMAIL}}
+                        </a>
+                      </div>
+                    </div>
+                    <a
+                      class="sakhtino-btn secondary"
+                    >
+                      ثبت درخواست مشاوره <i class="bi bi-arrow-left"></i>
+                    </a>
+                  </div>
+                   <div class="side-menu-socials">
+        @for (item of apps; track $index) {
+            <a [href]="item.Url">
+                <span>
+                    <i [class]="item.classIcon"></i>
+                </span>
+            </a>
+        
+        }
+                </div>
+  </div>
+ 
+</div>
