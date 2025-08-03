@@ -10,8 +10,13 @@ import { DatePipe } from '@angular/common';
 })
 export class NavbarComponent {
 LOGOURL = 'https://sakhtino.vakiljavangp.com/wp-content/uploads/2025/03/logo.png';
-PHONENUMBER='tel:+982133526287';
-EMAIL = 'mailto : example@gmail.com';
+PHONENUMBER={
+  url:'tel:+982133526287',
+  title:'021-33526254'
+};
+EMAIL = {url:'mailto : example@gmail.com',
+  title:'example@gmail.com'
+};
 
 apps=[
   {

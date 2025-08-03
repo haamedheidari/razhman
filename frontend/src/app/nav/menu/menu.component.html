@@ -1,0 +1,5 @@
+<ul  class="menu d-flex" [ngClass]="{'rowItems' : style , 'columnItems': !style}">
+	@for (item of menuItems; track $index) { 
+<li class="item" [ngClass]="{'active' : item.isActive}" (click)="toggleIsActive(item)"><a [routerLink]="item.url">{{item.title}}</a></li>
+	}
+</ul>

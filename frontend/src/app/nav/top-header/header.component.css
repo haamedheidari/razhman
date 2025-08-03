@@ -81,12 +81,12 @@ span.icon {
   margin-top: 32px;
 }
 
-@media  (max-width: 767px){
+@media  (max-width: 992px){
   .left-top-header .header-info-box {
     gap: 6px;
   }
  .left-top-header .header-info-box .text {
-  font-size: 12px;
+  font-size: 1em;
   line-height: 14px;
   font-weight: 100;
 }
@@ -100,16 +100,23 @@ span.icon {
     inset-inline-end: -14px;
   }
 .left-top-header{
-width: 88%; }
+width: 88%;
+ }
 .right-top-header{
   width: 12%;
 }
-.navside{
-  position: relative;
-  left: 100%;
+
+
 }
-
-
+@media (min-width :992px) {
+  .left-top-header .header-info-box {
+    gap: 6px;
+  }
+ .left-top-header .header-info-box .text {
+  font-size: 1.2em !important;
+  line-height: 14px;
+  font-weight: 100;
+}
 
 }
 

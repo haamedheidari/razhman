@@ -20,8 +20,8 @@
                       <div class="item">
                         <i class="bi bi-telephone-fill"></i>
                         <span class="v-line bg-secondary"></span>
-                        <a [href]="PHONENUMBER" class="item-text">
-                          021 - 33526278
+                        <a [href]="PHONENUMBER.url" class="item-text">
+                        {{PHONENUMBER.title}}
                         </a>
                       </div>
                       <div class="item">
@@ -34,18 +34,18 @@
                       <div class="item">
                         <i class="bi bi-envelope-fill"></i>
                         <span class="v-line bg-secondary"></span>
-                        <a [href]="EMAIL" class="item-text">
-                          {{EMAIL}}
+                        <a [href]="EMAIL.url" class="item-text">
+                          {{EMAIL.title}}
                         </a>
                       </div>
                     </div>
                     <a
-                      class="sakhtino-btn secondary"
+                      class="moshavereh-btn secondary"
                     >
                       ثبت درخواست مشاوره <i class="bi bi-arrow-left"></i>
                     </a>
-                  </div>
-                   <div class="side-menu-socials">
+
+                      <div class="side-menu-socials">
         @for (item of apps; track $index) {
             <a [href]="item.Url">
                 <span>
@@ -55,6 +55,8 @@
         
         }
                 </div>
+                  </div>
+                 
   </div>
  
 </div>

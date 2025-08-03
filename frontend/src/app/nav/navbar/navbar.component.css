@@ -43,7 +43,7 @@
   line-height: 32px;
   font-weight: 400;
 }
-.sakhtino-btn {
+.moshavereh-btn {
   padding: 0 28px;
   height: 52px;
   display: inline-flex;
@@ -57,7 +57,6 @@
   border: none;
   transition: 0.3s;
   white-space: nowrap;
-
 }
 .secondary{
     background-color: var(--secondarybtnbg) !important;
