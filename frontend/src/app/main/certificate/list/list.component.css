@@ -1,0 +1,36 @@
+.scroll-container {
+  overflow: hidden; 
+  white-space: nowrap; 
+  position: relative;
+  z-index: 2; 
+}
+
+.d-flex {
+  display: flex; 
+  transition: transform 0.5s ease; 
+}
+
+.card {
+  min-width: 170px;
+  height: 170;
+  border-radius: 20px;
+  background-color: var(--certificatebg);
+
+}
+.card-title{
+  white-space: normal;
+  color: var(--primarybtntext);
+  
+}
+.box1{
+    box-shadow: 0px 2px 0px white;
+}
+.box2{
+      box-shadow: 2px 0px 0px white;
+}
+.box3{
+    box-shadow: 0px -2px 0px white;
+}
+.box4{
+    box-shadow: -2px 0px 0px white;
+}

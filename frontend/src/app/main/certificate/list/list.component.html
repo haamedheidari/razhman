@@ -1,0 +1,17 @@
+ <div class="container">
+    <div class=" scroll-container">
+    <div class="d-flex p-2" [style.transform]="'translateX(' + (-currentIndex * 186) + 'px)'">
+    @for (item of items; track $index ;let i =$index) {
+    <div class="card ms-3   d-flex justify-content-center align-items-center" [ngClass]="{'box1':item.title===items[0].title,'box2':item.title===items[1].title,'box3':item.title===items[2].title,'box4':item.title===items[3].title}">
+        <img class="mt-3" [src]="item.imgUrl" alt="">
+      <div class="card-body ">
+        <div class="row my-2">
+                  <h6 class="card-title titleItems">{{ item.title }}</h6>
+
+        </div> 
+      
+     </div>
+    </div>}
+    </div>
+  </div>
+ </div>

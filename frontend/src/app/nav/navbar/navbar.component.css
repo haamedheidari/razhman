@@ -2,6 +2,7 @@
 .offcanvas{
     border-left: 6px solid var(--secondarycolor);
     width: 378px;
+  
 }
  .offcanvas-header span.close {
     transform: rotate(45deg);
@@ -13,6 +14,13 @@
     background: var(--secondarycolor);
     color: #fff;
     border: none;
+    
+  }
+  .offcanvas-body{
+    overflow-y: scroll;
+scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  height: 100%;
   }
 
 .side-menu-contact {
@@ -89,4 +97,16 @@ span.toggle-side-menu {
   position: relative;
   right: 0%;
   z-index: 4;
+}
+@media (max-width:450px) {
+  .offcanvas{
+    width: 75% !important;
+  }
+  
+}
+@media (min-width:450px) and (max-width:992px)  {
+  .offcanvas{
+    width: 60% !important;
+
+  }
 }

@@ -4,7 +4,20 @@
     box-sizing: border-box;
 }
 
+html{
+      scroll-behavior: smooth;
+}
+html {
+  overflow-y: scroll;   
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  height: 100%;
+}
 
+ 
+*::-webkit-scrollbar {
+  display: none;
+}
 a{
     text-decoration: none !important;
 }
@@ -36,7 +49,9 @@ ul {
   --primarybtntext: #ffffff !important;
   --primarybtnbghover: #101860 !important;
   --primarybtntexthover: #ffffff !important;
+  --prymarybtnbgactive: #4C5071 !important;
   --secondarybtnbg: #FF5E14 !important;
+  --secondarybtnbgdesable: #fa5609a0 !important;
   --secondarybtntext: #ffffff !important;
   --secondarybtnbghover: #FF5E14 !important;
   --secondarybtntexthover: #ffffff !important;
@@ -44,4 +59,12 @@ ul {
   --secondarybtntext2: #101860 !important;
   --secondarybtnbghover2: #243B8D !important;
   --secondarybtntexthover2: #fff !important;
+  --secondarybtnbgshadow:#ff62192e !important;
+    --shadow: #4c50714f !important;
+  --secondarybtnbghover2shadow: #243b8d97 !important;
+  --bgslider:#101860c0;
+--certificatebg:   rgba(255, 255, 255, 0.33);
+--bacgroundimageforitems: url('C:/Users/IRAN PC/Desktop/mobinat/razhman/frontend/public/57663b8ba00ae937be3d176cae1c38fa-min.webp');
+--team-membersbg:url('C:/Users/IRAN PC/Desktop/mobinat/razhman/frontend/public/backCertificate.webp') ;
 }
+

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ImenuItem } from '../../models/menu-item.model';
+import { ILink } from '../../models/link.model';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
@@ -13,7 +13,7 @@ import { RouterLink } from '@angular/router';
 export class MenuComponent {
 @Input() style : boolean = false;
 
-menuItems:ImenuItem[]=[
+menuItems:ILink[]=[
   {
     title:'صفحه اصلی',
     url:'home',
@@ -38,7 +38,7 @@ menuItems:ImenuItem[]=[
 
 
 
-toggleIsActive(item:ImenuItem){
+toggleIsActive(item:ILink){
   this.menuItems.forEach(item => item.isActive=false )
   item.isActive = true
 }

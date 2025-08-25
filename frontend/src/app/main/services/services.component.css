@@ -1,0 +1,152 @@
+.main-box {
+  width: 100%;
+}
+
+.left-box .right-box {
+  height: 90vh;
+  width: 100%;
+  overflow-y: hidden !important;
+}
+.text-center >.span1{
+  display: inline-block;
+  width: 5% !important;
+  height: 2px;
+  background-color: var(--primarybtnbg) !important;
+}
+.text-center > .span2{
+  display: inline-block;
+  width: 10% ;
+  height: 2px;
+  background-color: var(--secondarybtnbg) !important;
+}
+.title {
+  font-weight: 800 !important;
+  color: var(--primarycolor);
+}
+
+.right-box >.description {
+  font-weight: 500 ;
+  color: var(--text-color100) ;
+}
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 500px;
+}
+.service-box {
+  height: 300px;
+  border-radius: 20px;
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primarybtntext);
+  box-sizing: border-box;
+}
+.line {
+  width: 80% !important;
+  height: 1px !important;
+  background-color: var(--secondarycolor100) !important;
+  margin: 10px 0 !important;
+}
+.line1 {
+  width: 85% !important;
+  height: 1px !important;
+  background-color: var(--secondarycolor100) !important;
+  margin: 10px 0 !important;
+  position: absolute;
+}
+.box2 .line1{
+  background-color: var(--text-color200) !important;
+}
+
+.seeAll {
+  background-color: var(--secondarybtnbg);
+  border-radius: 20px;
+}
+.titleItems {
+  font-weight: bolder !important;
+  font-size: medium !important;
+}
+.textdiscription {
+  text-align: center;
+  line-height: 30px;
+}
+.box1{
+background-color: var(--secondarybtnbg);
+}
+.box2{
+    background-color: var(--text-color100);
+color: var(--text-color200);}
+.box3{
+    background-color: var(--text-color200);
+}
+.box4{
+    background-color: var(--primarycolor200);
+}
+.divbox {
+  width: 100%;
+  height: 100px;
+  opacity: 0.1;
+  margin: 3px;
+}
+.first {
+  background-color: var(--secondarybtnbg) !important;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.first2 {
+  background-color: var(--primarybtnbg) !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.last {
+  background-color: var(--prymarybtnbgactive) !important;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.last2 {
+  background-color: var(--secondarybtnbg) !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.divbox2 {
+  width: 100%;
+  height: 200px;
+  opacity: 0.1;
+  margin: 3px;
+}
+.scroll-container {
+  overflow: hidden; 
+  white-space: nowrap; 
+  position: relative; 
+}
+
+.d-flex {
+  display: flex; 
+  transition: transform 0.5s ease; 
+  
+}
+
+.card {
+  min-width: 230px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  
+
+}
+.card-text,.card-title{
+  white-space: normal;
+  
+}
+
+@media (min-width:992px) {
+  .main-box{
+    height: 90vh;
+  }
+
+}

@@ -1,0 +1,39 @@
+<section class="team ">
+    <div class="container">
+      <h2 class="section-title">کارشناسان با تجربه ما</h2>
+      <p class="section-subtitle">تیم ما</p>
+  <div>
+
+    <div class="">
+        <div class=" mt-5">
+  <div class=" scroll-container">
+    <div class="d-flex" [style.transform]="'translateX(' + (-currentIndex * 265) + 'px)'">
+    @for (item of items; track $index ;let i =$index) {
+    <div class="card ms-3 service-box d-flex justify-content-center align-items-center" >
+        <img class="rounded-circle card-img" [src]="item.imageUrl" alt="">
+      <div class="card-body ">
+        <div class="row my-2 text-light">
+                  <h6 class="card-title titleItems">{{item.name}}</h6>
+
+        </div>
+<div class="row text-light">
+          <p class="card-text textdiscription">{{item.role}}</p>
+
+</div>      </div>
+    </div>}
+    </div>
+  </div>
+</div>
+    </div>
+ <div class="btns">
+         <button class="carousel-control-prev" type="button" (click)="prev()">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" (click)="next()">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+ </div>
+  </div>
+      
+    </div>
+  </section> 

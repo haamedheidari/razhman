@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ImenuItem } from '../../models/menu-item.model';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from "../menu/menu.component";

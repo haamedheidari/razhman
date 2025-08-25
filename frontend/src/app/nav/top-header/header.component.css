@@ -60,11 +60,11 @@ span.icon {
   align-items: center;
   color: rgba(255, 255, 255, 0.47);
 }
- .left-bac {
+.left-bac {
   width: 40%;
   height: 35px;
   position: absolute;
-  background:var(--secondarycolor);
+  background: var(--secondarycolor);
   inset-inline-end: 0;
   top: 0;
   z-index: -1;

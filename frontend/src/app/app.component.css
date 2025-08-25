@@ -1,4 +1,21 @@
-.container-fluid{
-    padding: 0;
-    margin: 0;
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+.footer{
+  width: 100%;
+  overflow: hidden;
+}
+.btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondarybtnbg);
+  position: fixed;
+  right: 15px !important;
+  bottom: 15px !important;
 }

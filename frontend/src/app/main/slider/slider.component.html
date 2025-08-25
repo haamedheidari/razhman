@@ -1,35 +1,60 @@
+<div class="container-fluid">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
 
-<div class="background e-con justify-content-center d-flex">
-    <div class="bg-cover"></div>
-
-    <div class="inner-slide container"> <!-- از container برای padding و max-width استفاده کنید -->
-        <div class="row align-items-center"> <!-- align-items-center برای وسط چین کردن عمودی -->
-
-            <div class="col-md-7 col-12 col-content"> <!-- col-content اضافه شد -->
-                <h2 class="text-light my-2">
-                    شرکت ساخت و ساز ساختینو
-                </h2>
-                <p class="text-light my-4">ساخت و ساز فرآیند ساخت یک ساختمان یا زیرساخت است. ساخت و ساز از تولید متفاوت است در آن تولید معمولا شامل تولید انبوه از اقلام مشابه بدون خریدار تعیین شده است.</p>
-
-                <div class="moshavereh-btn secondary">
-                    مشاوره رایگان<i class="bi bi-arrow-left"></i>
-                </div>
+    <div *ngFor="let slide of slides; let i = index" class="carousel-item" [ngClass]="{ active: i === 0 }">
+      <div class="hero-slide d-flex align-items-center" [style.backgroundImage]="'url(' + slide.backgroundUrl + ')'">
+        <div class="bg">
+        <div class="container mt-5">
+          <div class="row align-items-center">
+            
+          
+            <div class="col-lg-6 text-white text-center">
+              <h1 class="fw-bold mb-3">{{ slide.title }}</h1>
+              <p class="my-4 text">{{ slide.description }}</p>
+              <a [href]="slide.buttonUrl" class="btn btn-orange px-4 py-2">{{ slide.buttonText }} <i class="bi bi-arrow-left m-3"></i></a>
             </div>
 
-            <div class="imagediv col-md-5 col-12">
-                <img [src]="SLIDEIMAGE" alt="" class="wp-image-112">
+             <div class="col-lg-6 text-center mt-3">
+              <img [src]="slide.imageUrl" class="img-fluid" [alt]="slide.title">
             </div>
-
+          </div>
         </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Mountain section - hidden on small screens by default -->
-    <div class="mountain text-center d-none d-md-block">
-        <div class="h4">
-            <div class="arrow-down">
-                <i class="bi bi-arrow-down p-2 animate"></i> <!-- کلاس animate برای انیمیشن -->
-            </div>
-        </div>
-    </div>
+  </div>
+
+
+
+  <div class="svg text-center">
+
+<a href="" class="btn btn-wave h5 scrollBtn" (click)="scroll($event)">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+</svg></a>
+</div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class=" ">
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+</svg>    </span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+</svg>
+    </span>
+  </button>
+</div>
+
+
+
+
+
+
 
 </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DatePipe } from '@angular/common';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-navbar',
@@ -17,6 +18,9 @@ PHONENUMBER={
 EMAIL = {url:'mailto : example@gmail.com',
   title:'example@gmail.com'
 };
+TIMEOFFICE={
+title : 'شنبه تا پنجشنبه /8:00-16:00'
+}
 
 apps=[
   {

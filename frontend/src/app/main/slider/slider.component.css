@@ -1,373 +1,80 @@
 
-
-
-.background {
-    background-image: url("https://sakhtino.vakiljavangp.com/wp-content/uploads/2025/05/how-are-bridges-built-hero.webp");
-    background-size: cover;
-    background-position: center; 
-    width: 100%;
-    min-height: 80vh; 
-    position: relative; 
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    color: #FFFFFF; 
+.container-fluid{
+    margin: 0;
+    padding: 0;
 }
+.hero-slide {
+  min-height: 70vh;
+  background:  center/cover no-repeat;
+  position: relative;
 
-.bg-cover {
-    background-color: #101860; 
-    position: absolute;
+}
+.bg{
+    width: 100%;
+    min-height: 70vh;
     z-index: 1;
-    width: 100%;
-    height: 100%; 
-    opacity: 0.92;
+    background-color: var(--bgslider) !important;
 }
 
-/* Container for content and image */
-.inner-slide {
-    position: relative;
-    z-index: 2;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    padding: 20px; 
-    width: 100%; 
+.btn-orange {
+  background: var(--secondarybtnbg);
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
 }
-
-/* Text content column */
-.col-content {
-    width: 100%;
-    max-width: 600px; 
+.btn-orange:hover {
+  background: var(--secondarybtnbghover);
+  color: #fff;
 }
-
-.col-content h2 {
-    font-size: 30px !important;
-    margin-bottom: 0.5em;
+.text{
+text-align: start;
 }
-
-.col-content p {
-    font-size: 8px ;
-    margin-bottom: 1.5em;
+.bi-arrow-left{
+    font-size: large;
 }
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  height: 60px;
+  top: 45%;
+  margin: 0px 20px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #fff !important;
 
-/* Button styles */
-.moshavereh-btn {
-    padding: 15px 30px; 
-    height: auto; 
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.1em; 
-    font-weight: 500;
-    border-radius: 27px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 15px; 
 }
-
-.moshavereh-btn.secondary {
-    background-color: #FF5E14; 
-    color: #FFFFFF; 
-}
-
-.moshavereh-btn:hover {
-    background-color: #e05211; 
-}
-
-.moshavereh-btn i {
-    font-size: 1.2em; 
-}
-
-/* Image container */
-.imagediv {
-    position: relative;
-    width: 100%;
-    max-width: 350px;
-    height: auto; 
-    margin-top: 30px; 
-    --e-transform-rotateZ: -2.5deg; 
-    transform: rotate(var(--e-transform-rotateZ)); 
-}
-
-.imagediv img {
-    position: static; 
-   width: 350px;
-    height: auto; 
-    right: auto; 
-    top: auto; 
-    vertical-align: middle;
-    display: block; 
-}
-
-/* Mountain shape */
-.mountain {
-    width: 100%;
-    height: 79px;
-    background-color: rgb(246, 247, 247);
-    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-    position: absolute;
-    bottom: -1px;
-    z-index: 3;
+.carousel-control-prev > .bi-chevron-left ,.carousel-control-next > .bi-chevron-right {
+  filter: invert(1);
+  width: 30px;
+  height: 30px;
+fill: #fff !important;
+color: #fff !important;
 }
 
 
-
-/* Arrow down styles */
-.arrow-down i {
-    border: 1px solid var(--secondarybtnbghover2); 
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 20px; 
-    cursor: pointer; 
-    z-index: 3;
+.svg{
+    background-image: url('https://sakhtino.vakiljavangp.com/wp-content/uploads/2025/04/bb.svg');
+    background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 85%;
+  z-index: 1;
+}
+.btn-wave{
+    border: 1px solid var(--secondarybtnbghover2);
     color: var(--secondarybtnbghover2);
+    border-radius: 45%;
+    text-align: center;
+    margin: 10px ;
+    padding: 10px 5px;
 }
 
-/* Media Queries for responsiveness */
-
-/* Small screens (mobile phones) - overrides default styles */
-@media (max-width: 767.98px) {
-    .background {
-        min-height: 60vh; 
-    }
-
-    .inner-slide {
-        flex-direction: column; 
-        padding: 20px 15px;
-    }
-
-    .col-content {
-        order: 1; 
-        max-width: 100%; 
-    }
-
-    .col-content h2 {
-        font-size: 2.2em; 
-    }
-
-    .col-content p {
-        font-size: 1em;
-    }
-
-    .moshavereh-btn {
-        padding: 12px 25px;
-        font-size: 1em;
-    }
-
-    .imagediv {
-        order: 2; 
-        max-width: 100%; 
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-    }
-
-    .mountain {
-        display: none; 
+@media (max-width:1024px) {
+    .svg{
+        top: 89%;
     }
 }
-
-/* Medium screens (tablets) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .background {
-        min-height: 75vh;
-    }
-
-
-    .col-content {
-        width: 50%; 
-        order: 1; 
-        text-align: right; 
-        padding-left: 20px; 
-    }
-
-    .col-content h2 {
-font-weight: 700 !important;  
-    font-size: 1.5em !important;
-
-    }
-
-    .col-content p {
-        font-size: 1em;
-    }
-
-    .moshavereh-btn {
-        padding: 15px 30px;
-        font-size: 1.1em;
-    }
-
-    .imagediv {
-        width: 45%; 
-        order: 2; 
-        margin-top: 0;
-        max-width: none;
-        
-    }
-    .imagediv {
-        --e-transform-rotateZ: -2.5deg;
-        transform: rotate(var(--e-transform-rotateZ));
-    }
-
-
-    .imagediv img {
-        position: absolute; 
-        width: 330px;
-        height: 650px;
-        right: 50%; 
-        top: 50% !important;
-        transform: translate(45%, -48%); 
-        z-index: 0;
-    }
-
-    .mountain {
-        display: block; 
-        height: 80px;
-    }
-
-    .arrow-down  {
-      margin-top: 20px !important;
-    }
-}
-
-/* Large screens (desktops) */
-@media (min-width: 992px) {
-    .background {
-        min-height: 90vh; 
-    }
-
-    .inner-slide {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 5%; 
-    }
-
-    .col-content {
-       
-        order: 1;
-        text-align: right;
-        padding-left: 30px; 
-    }
-
-    .col-content h2 {
-        font-size: 3.5em; 
-    }
-
-    .col-content p {
-        font-size: 1.3em;
-    }
-
-  
-
-    .imagediv {
-      
-        order: 2;
-        margin-top: 0;
-        max-width: none;
-        margin-left: -50px;
-    }
-    .imagediv {
-        --e-transform-rotateZ: -2.5deg;
-        transform: rotate(var(--e-transform-rotateZ));
-    }
-
-    .imagediv img {
-        position: absolute;
-        width: 400px; 
-        height: 700px;
-        right: 120%;
-        transform: translate(45%, -60%); 
-        z-index: 0;
-    }
-
-    .mountain {
-        display: block;
-        bottom: -1px;
-    }
-
-    .arrow-down  {
-        margin-top: 20px;
-    }
-}
-@media (min-width: 1020px) {
-    .background {
-        min-height: 80vh; 
-    }
-
-    .inner-slide {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 5%; 
-    }
-
-    .col-content {
-       
-        order: 1;
-        text-align: right;
-        padding-left: 30px; 
-    }
-
-    .col-content h2 {
-        font-size: 3.5em; 
-    }
-
-    .col-content p {
-        font-size: 1.3em;
-    }
-
-    .moshavereh-btn {
-        padding: 18px 35px;
-        font-size: 1.2em;
-    }
-
-    .imagediv {
-      
-        order: 2;
-        margin-top: 0;
-        max-width: none;
-       
-    }
-    .imagediv {
-        --e-transform-rotateZ: -2.5deg;
-        transform: rotate(var(--e-transform-rotateZ));
-    }
-
-    .imagediv img {
-        position: absolute;
-        width: 400px; 
-        height: 675px;
-        right : 130%;
-        top: 50%;
-        transform: translate(50%, -65%); 
-        z-index: 0;
-    }
-
-    .mountain {
-        display: block;
-        bottom: -1px;
-    }
-
-    .arrow-down  {
-        margin-top: 20px;
-    }
-}
-@media (min-width: 1400px) {
- 
-    .imagediv img {
-        position: absolute;
-        width: 400px; 
-        height: 650px;
-        right : 130%;
-        top: 50%;
-        transform: translate(20%, -81%); 
-        z-index: 0;
-    }
-
-   
-}
-
-
-
-

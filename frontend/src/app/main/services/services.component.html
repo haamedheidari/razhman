@@ -1,0 +1,98 @@
+<div class="container-fluid">
+  <div
+    class="d-flex justify-content-center align-items-center flex-column main-box  row"
+  >
+    <div class="right-box col-12 col-md-6 col-lg-5 mt-5">
+      <h3 class="text-center title">{{ mainService.title }}</h3>
+      <div class="text-center">
+        <div class="span1 mx-1"></div> <div class="span2 mx-1"></div>
+      </div>
+      <div class="text-center mt-3 h4 description">
+        {{ mainService.description }}
+      </div>
+      <div class="text-center mt-3">
+        <img [src]="mainService.imgUrl" alt="" />
+      </div>
+      <div class="text-center">
+        <button class="btn seeAll mt-4 py-3 px-5">
+          <a
+            [routerLink]="['/services']"
+            class="text-decoration-none text-white"
+            >مشاهده همه <i class="bi bi-arrow-left"></i
+          ></a>
+        </button>
+      </div>
+    </div>
+    <div class="left-box col-12 col-md-11 my-md-4 col-lg-7">
+   <div class="row g-5 d-md-flex d-none">
+<div class="col-4">
+<div class=" row">
+  <div class="divbox2 first"></div>
+</div><div class="row">
+  <div  class="service-box box1 p-3">
+    <h6 class="titleItems">{{services[0].title}}</h6>
+    <span class="line"></span>
+    <p class="textdiscription">{{services[0].description}}</p>
+  </div>
+</div>
+<div class=" row">
+  <div class="divbox first2"></div>
+</div>
+</div>
+<div class="col-4"><div class="row">
+  <div  class="service-box box2 p-3">
+    <h6 class="titleItems">{{services[1].title}}</h6>
+    <span class="line"></span>
+    <p class="textdiscription">{{services[1].description}}</p>
+  </div>
+</div><div class="row"> 
+  <div  class="service-box box3 p-3">
+    <h6 class="titleItems">{{services[2].title}}</h6>
+    <span class="line"></span>
+    <p class="textdiscription">{{services[2].description}}</p>
+  </div>
+</div></div>
+<div class="col-4">
+<div class=" row">
+  <div class="divbox last"></div>
+</div>  
+<div class="row">
+  <div  class="service-box box4 p-3">
+    <h6 class="titleItems">{{services[3].title}}</h6>
+    <span class="line"></span>
+    <p class="textdiscription">{{services[3].description}}</p>
+  </div>
+</div>
+<div class=" row">
+  <div class="divbox2 last2"></div>
+</div></div>
+   </div>
+
+
+   <!-- card list for phone size -->
+
+<div class=" mt-5 d-md-none">
+  <div class=" scroll-container">
+    <div class="d-flex" [style.transform]="'translateX(' + (-currentIndex * 250) + 'px)'">
+    @for (item of items; track $index ;let i =$index) {
+    <div class="card ms-3 service-box d-flex justify-content-center align-items-center" [ngClass]="{'box1':item.title===items[0].title,'box2':item.title===items[1].title,'box3':item.title===items[2].title,'box4':item.title===items[3].title}">
+      <div class="card-body ">
+        <div class="row my-2">
+                  <h6 class="card-title titleItems">{{ item.title }}</h6>
+
+        </div> 
+        <div class="row line1">
+        </div>
+<div class="row my-5">
+          <p class="card-text textdiscription">{{ item.description }}</p>
+
+</div>      </div>
+    </div>}
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+
+ 

@@ -1,0 +1,81 @@
+ section.team {
+      background: var(--team-membersbg) no-repeat center center/cover;
+      padding-top: 5%;
+      height: 80vh;
+      position: relative;
+    }
+
+    section.team::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--primarybtnbghover); 
+      opacity: 0.9;
+    }
+
+    .team .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fff;
+      font-weight: 900;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 25px;
+      color: var(--text-color100);
+    }
+    .btns{
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scroll-container {
+  overflow: hidden; 
+  white-space: nowrap; 
+  position: relative;
+  width: 82%; 
+   margin: 0 auto;
+}
+
+.d-flex {
+  display: flex; 
+  transition: transform 0.5s ease; 
+  margin-bottom: 10px;
+  
+}
+
+.card {
+    background-color: var(--certificatebg) !important;
+    border-radius: 20px !important;
+  min-width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  border-bottom: 2px solid white;
+ text-align: center;
+}
+.card:hover{
+    border-bottom: 2px solid var(--secondarybtnbg);
+}
+.card-text,.card-title{
+  white-space: normal;
+  
+}
+.card-title{
+    font-weight: 600;
+}
+.card-text{
+    color: var(--text-color100);
+}
+.card-img{
+    width: 150px;
+    height: 150px;
+    margin: 20px 10px ;
+}
